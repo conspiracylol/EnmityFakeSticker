@@ -20,10 +20,10 @@ const [
     filters.byProps("getPremiumPacks", "getAllGuildStickers", "getStickerById"),
     filters.byProps("getChannel"),
     filters.byProps("sendMessage", "sendStickers"),
-    filters.byProps('getChannelPermissions'),
+    filters.byProps('getChannelPermissionSpecMap'),
 )
 
-const PermStat = getByProps("canUseStickersEverywhere", {defaultExport: false});
+const PermStat = getByProps("canUseCustomStickersEverywhere", {defaultExport: false});
 
 const LoadingIcon = getIDByName('ic_clock')
 const FailIcon = getIDByName('Small')
