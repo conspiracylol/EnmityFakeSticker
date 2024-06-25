@@ -100,15 +100,16 @@ const FakeSticker: Plugin = {
                 const stickerLink = `https://media.discordapp.net/stickers/${sticker.id}.png`
                 if (sticker.format_type === 1) { // png
                     return MessageStore.sendMessage(
-                        channel.id, {content: `${stickerLink}?size=160`}
+                        channel.id, {content: `${stickerLink}?size=160&quality=lossless`}
                     )
                 } else if (sticker.format_type === 2) { // apng
                     sendAnimatedSticker(stickerLink, channel.id).then()
-                } else if (sticker.format_type === 3) { // lottie
+                } /*else if (sticker.format_type === 3) { // lottie
                     return MessageStore.sendMessage(
                         channel.id, {content: `https://raw.githubusercontent.com/m4fn3/RawStickers/master/${sticker.pack_id}/${sticker.id}.gif`}
                     )
-                }
+                }*/
+                // sht pisses me off^
             }
         })
 
