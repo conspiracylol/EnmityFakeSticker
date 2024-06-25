@@ -9,4 +9,4 @@ I only "tried" fixing plugins main functionality, send a sticker, manifest or an
 BASICALLY AN OVERWRITE
 
 ## Install
-https://raw.githubusercontent.com/SerStars/EnmityFakeSticker/master/dist/FakeSticker.js
+https://raw.githubusercontent.com/conspiracylol/EnmityFakeSticker/master/dist/FakeSticker.js
